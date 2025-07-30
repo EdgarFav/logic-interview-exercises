@@ -22,7 +22,7 @@ function rotateRight(arr, n) {
     const sliceOne = arr.slice(0, divide)
     console.log("Soy el slice 1: ", sliceOne)
 
-    const sliceTwo = arr.slice(divide, arr.at(-1))
+    const sliceTwo = arr.slice(divide)
     console.log("Soy el slice 2: ", sliceTwo)
 
     console.log("soy el array original: ", arr)

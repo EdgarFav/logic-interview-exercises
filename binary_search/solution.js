@@ -6,7 +6,18 @@
  */
 function binarySearch(arr, target) {
     // Tu implementación aquí
-    return -1;
+    let result = 0
+
+    if (!arr.includes(target)) result = -1
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === target) {
+            result = i
+            console.log(`soy result ${result}`)
+        }
+    }
+
+    return result;
 }
 
 module.exports = binarySearch;
